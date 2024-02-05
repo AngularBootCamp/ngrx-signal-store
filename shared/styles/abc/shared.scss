@@ -1,0 +1,79 @@
+@import 'material-design-icons-iconfont/dist/material-design-icons.css';
+@import 'theme';
+@import 'abc-banner';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family, Helvetica, sans-serif);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Make secondary navbars vertically shorter (that is, less tall) than
+// regular navs.
+nav.secondary-nav {
+  li {
+    padding-top: calc(var(--nav-element-spacing-vertical) / 2);
+    padding-bottom: calc(var(--nav-element-spacing-vertical) / 2);
+  }
+}
+
+// Temporary colors until theming can be improved
+
+.active-link {
+  color: var(--contrast-inverse);
+  background-color: var(--contrast);
+  border: 0;
+  border-radius: var(--border-radius, 0.25rem);
+}
+
+.highlighted {
+  background-color: var(--mark-background-color);
+}
+
+// Give material icons a better vertical alignment. The default is
+// basically always wrong for how we use them.
+.material-icons {
+  vertical-align: bottom;
+}
+
+// Make unordered list "collections" look a little like they did
+// previously.
+ul.collection {
+  // For now, these are copied from Pico's _forms.scss textarea styling.
+  --background-color: var(--form-element-background-color);
+  --border-color: var(--form-element-border-color);
+  --color: var(--form-element-color);
+  --box-shadow: none;
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+  outline: none;
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow);
+  color: var(--color);
+  font-weight: var(--font-weight);
+
+  list-style-type: none;
+  padding: 0;
+
+  & > li {
+    padding: 0;
+    list-style-type: none;
+    gap: 0.5em;
+    margin: 0.75em;
+  }
+}
