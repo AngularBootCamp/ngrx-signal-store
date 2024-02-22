@@ -17,7 +17,7 @@
     "@angular/platform-browser": "^17.1.0",
     "@angular/platform-browser-dynamic": "^17.1.0",
     "@angular/router": "^17.1.0",
-    "@ngrx/signals": "17.0.1",
+    "@ngrx/signals": "17.1.0",
     "@picocss/pico": "^1.5.7",
     "material-design-icons-iconfont": "^6.7.0",
     "rxjs": "~7.8.0",
